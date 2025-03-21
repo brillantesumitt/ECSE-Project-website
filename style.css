@@ -1,369 +1,108 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #ff7f00;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #141e30;
+    background: linear-gradient(to right, #ff8000, #ff4c00);
     color: white;
+    overflow-x: hidden;
 }
 
 nav {
-    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
-    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    margin-right: 20px;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+nav ul li a:hover {
+    color: #ffcd3c;
+}
+
+/* HOME PAGE */
 .home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 50px;
 }
 
 .btn {
-    background-color: #222;
+    background: #ff6a00;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
+.btn:hover {
+    background: #ffcd3c;
+    transform: scale(1.1);
 }
 
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
+/* PAGE TRANSITIONS */
+.transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff4c00;
+    z-index: 10;
+    transform: translateY(-100%);
+    transition: transform 0.8s ease-in-out;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff7f00;
-    color: white;
-}
-
-nav {
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home {
-    text-align: center;
-    padding: 100px;
-}
-
-.btn {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+.transition-1 {
+    transform: translateY(0);
 }
 
